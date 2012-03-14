@@ -1,0 +1,14 @@
+exportPattern("^[[:alpha:]]+")
+exportMethods(
+    "initialize",
+    "pop",
+    "push",
+    "show" 
+)
+exportClasses(
+    "AbstractHeap",
+     "EnvHeap",
+     "Heap",
+     "ListHeap",
+     "SingletonHeap" 
+)
