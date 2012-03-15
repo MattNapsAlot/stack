@@ -1,7 +1,7 @@
 
 setMethod(
   f = "pop",
-  signature = signature("EnvHeap"),
+  signature = signature("EnvStack"),
   definition = function(h){
     if(length(h@heap$elements) == 0)
       return(NULL)
@@ -13,7 +13,7 @@ setMethod(
 
 setMethod(
   f = "push",
-  signature = signature("EnvHeap", "ANY"),
+  signature = signature("EnvStack", "ANY"),
   definition = function(h, val){
     h@heap$heap <- c(val, h@heap$heap)
     h@heap$elt <- NULL
@@ -23,7 +23,7 @@ setMethod(
 
 setMethod(
   f = "show",
-  signature = "EnvHeap",
+  signature = "EnvStack",
   definition = function(object){
     show(object@heap$heap)
     show(object@heap$elt)

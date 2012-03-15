@@ -1,6 +1,6 @@
 setMethod(
   f = "pop",
-  signature = signature("ListHeap"),
+  signature = signature("ListStack"),
   definition = function(h){
     if(length(h@heap$heap) == 0)
       return(h)
@@ -12,7 +12,7 @@ setMethod(
 
 setMethod(
   f = "push",
-  signature = signature("ListHeap", "ANY"),
+  signature = signature("ListStack", "ANY"),
   definition = function(h, val){
     h@heap <- list(heap = c(val, h@heap$heap), elt = NULL)
     h

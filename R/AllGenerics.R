@@ -1,4 +1,3 @@
-
 setGeneric(
   name = "pop", 
   def = function(h) {

@@ -1,6 +1,6 @@
 setMethod(
   f = "show",
-  signature = "AbstractHeap",
+  signature = "AbstractStack",
   definition = function(object){
     show(object@heap) 
   }

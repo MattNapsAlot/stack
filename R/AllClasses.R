@@ -1,10 +1,5 @@
-# TODO: Add comment
-# 
-# Author: furia
-###############################################################################
-
 setClass(
-  Class = "AbstractHeap",
+  Class = "AbstractStack",
   representation = representation(
     heap = "ANY",
     "VIRTUAL"
@@ -12,8 +7,8 @@ setClass(
 )
 
 setClass(
-  Class = "ListHeap",
-  contains = "AbstractHeap",
+  Class = "ListStack",
+  contains = "AbstractStack",
   representation = representation(
     heap = "list"
   ),
@@ -26,8 +21,8 @@ setClass(
 )
 
 setClass(
-  Class = "EnvHeap",
-  contains = "AbstractHeap",
+  Class = "EnvStack",
+  contains = "AbstractStack",
   representation = representation(
     heap = "environment",
     "VIRTUAL"
@@ -42,13 +37,13 @@ setClass(
 )
 
 setClass(
-  Class = "Heap",
-  contains = "EnvHeap"
+  Class = "Stack",
+  contains = "EnvStack"
 )
 
 setClass(
-  Class = "SingletonHeap",
-  contains = "EnvHeap",
+  Class = "SingletonStack",
+  contains = "EnvStack",
   prototype = prototype(
     heap = new.env()
   )

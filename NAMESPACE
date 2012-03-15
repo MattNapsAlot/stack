@@ -6,9 +6,9 @@ exportMethods(
     "show" 
 )
 exportClasses(
-    "AbstractHeap",
-     "EnvHeap",
-     "Heap",
-     "ListHeap",
-     "SingletonHeap" 
+    "AbstractStack",
+     "EnvStack",
+     "Stack",
+     "ListStack",
+     "SingletonStack" 
 )
